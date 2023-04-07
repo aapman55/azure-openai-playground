@@ -132,4 +132,4 @@ dmypy.json
 .idea
 
 # Local secrets
-.secrets
+secrets.yaml
