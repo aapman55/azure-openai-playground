@@ -29,7 +29,7 @@ class Secret:
         return self.__repr__()
 
 
-def get_local_secrets(file_name: str = ".secrets") -> dict[str:Secret]:
+def get_local_secrets(file_name: str = "secrets.yaml") -> dict[str:Secret]:
     """
     Helper method to read the local secrets in the repo root
     :param file_name:
