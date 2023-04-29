@@ -4,7 +4,7 @@ Utility for handling secrets
 from dataclasses import dataclass
 import yaml
 
-from .paths import get_absolute_repo_root
+from playground.utils.paths import get_absolute_repo_root
 
 
 @dataclass
