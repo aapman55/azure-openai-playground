@@ -10,6 +10,7 @@ packages = [{include = "azure_openai_playground"}]
 python = "^3.10"
 langchain = "^0.0.153"
 openai = "^0.27.4"
+wikipedia = "^1.4.0"
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.3.0"
