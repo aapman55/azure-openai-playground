@@ -4,7 +4,7 @@ Utility for handling secrets
 from dataclasses import dataclass
 import yaml
 
-from .paths import get_absolute_repo_root
+from playground.utils.paths import get_absolute_repo_root
 
 
 @dataclass
@@ -39,3 +39,4 @@ def get_local_secrets(file_name: str = "secrets.yaml") -> dict[str:Secret]:
     contents = yaml.safe_load((repo_root / file_name).read_text())
 
     return {k: Secret(v) for k, v in contents.items()}
+
