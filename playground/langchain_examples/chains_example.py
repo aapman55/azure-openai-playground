@@ -5,6 +5,7 @@ from langchain.chains import SimpleSequentialChain
 from langchain.llms import AzureOpenAI
 
 from playground.utils.azure_openai import setup_environment_from_local
+
 setup_environment_from_local()
 
 

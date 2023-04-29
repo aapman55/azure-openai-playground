@@ -3,6 +3,7 @@ from langchain.llms import AzureOpenAI
 from langchain.prompts import PromptTemplate
 
 from playground.utils.azure_openai import setup_environment_from_local
+
 setup_environment_from_local()
 
 

@@ -5,14 +5,14 @@ from playground.utils.secret import get_local_secrets
 
 
 def set_environment_variables(
-    openai_api_key:str,
-    openai_api_base:str,
+    openai_api_key: str,
+    openai_api_base: str,
 ) -> None:
     environ["OPENAI_API_KEY"] = openai_api_key
     environ["OPENAI_API_BASE"] = openai_api_base
 
 
-def setup_environment_from_local(path:str = None) -> None:
+def setup_environment_from_local(path: str = None) -> None:
     if not path:
         path = get_absolute_repo_root()
 
@@ -27,4 +27,3 @@ def setup_environment_from_local(path:str = None) -> None:
     openai.api_base = secrets["api_base"].get_secret()
     openai.api_type = "azure"
     openai.api_version = secrets["api_version"].get_secret()
-
